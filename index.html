@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Enhancements -->
+    <title>Calculadora de Tasa de Interés | Calcule sus Rendimientos</title>
+    <meta name="description" content="Herramienta en línea para calcular el interés simple y compuesto de sus inversiones o préstamos de manera rápida y exacta.">
+    <meta name="keywords" content="calculadora de interés, interés simple, tasa de interés, finanzas, inversión">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Reference to CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <!-- Main Heading (H1) for SEO -->
+        <h1>Calculadora de Tasa de Interés</h1>
+
+        <form id="calculator-form">
+            <div class="input-group">
+                <label for="principal">Monto Principal ($):</label>
+                <input type="number" id="principal" name="principal" step="any" placeholder="Ej. 1000" required>
+            </div>
+
+            <div class="input-group">
+                <label for="rate">Tasa de Interés Anual (%):</label>
+                <input type="number" id="rate" name="rate" step="any" placeholder="Ej. 5" required>
+            </div>
+
+            <div class="input-group">
+                <label for="years">Tiempo (Años):</label>
+                <input type="number" id="years" name="years" step="any" placeholder="Ej. 2" required>
+            </div>
+
+            <button type="submit" id="calculate-btn">Calcular Interés</button>
+        </form>
+
+        <section id="result-container" class="result">
+            <h2>Resultado del Cálculo</h2>
+            <p id="result-text">Ingrese los datos y presione calcular.</p>
+        </section>
+    </main>
+
+    <!-- Reference to JavaScript file (bundle empaquetado por Webpack o script.js directo) -->
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
